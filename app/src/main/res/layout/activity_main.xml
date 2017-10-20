@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rendszergazda.counter.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:text="Válassz"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="287dp"
+        tools:layout_editor_absoluteX="120dp"
+        android:layout_above="@+id/btn_paper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp" />
+
+    <Button
+        android:id="@+id/btn_rock"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#C8C8C8"
+        android:hint="Kő"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="366dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/iv_output"
+        android:layout_toStartOf="@+id/iv_output" />
+
+    <Button
+        android:id="@+id/btn_paper"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#C8C8C8"
+        android:hint="Papír"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="366dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/btn_scissors" />
+
+    <Button
+        android:id="@+id/btn_scissors"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#C8C8C8"
+        android:hint="Olló"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="366dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iv_input"
+        android:layout_toEndOf="@+id/iv_input" />
+
+    <ImageView
+        android:id="@+id/iv_input"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:tag="input"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_marginTop="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/iv_output"
+        android:layout_width="121dp"
+        android:layout_height="77dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_below="@+id/iv_input"
+        android:layout_alignLeft="@+id/iv_input"
+        android:layout_alignStart="@+id/iv_input"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout>
